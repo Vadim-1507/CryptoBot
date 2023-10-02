@@ -1,0 +1,32 @@
+{
+  "name": "crypto_bot",
+  "version": "1.0.0",
+  "main": "src/index.js",
+  "private": false,
+  "license": "MIT",
+  "author": {
+    "name": "Fayrushin Vadim",
+    "email": "fayruvshin@gmail.com",
+    "telegram": "https://t.me/VadimFayr"
+  },
+  "repository": "https://github.com/Vadim-1507/CryptoBot",
+  "scripts": {
+    "build": "webpack --mode production",
+    "start": "webpack serve --mode development"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.23.0",
+    "@babel/plugin-proposal-class-properties": "^7.18.6",
+    "@babel/preset-env": "^7.22.20",
+    "babel-loader": "^9.1.3",
+    "css-loader": "^6.8.1",
+    "eslint": "^8.50.0",
+    "file-loader": "^6.2.0",
+    "html-webpack-plugin": "^5.5.3",
+    "style-loader": "^3.3.3",
+    "webpack": "^5.88.2",
+    "webpack-cli": "^5.1.4",
+    "webpack-dev-server": "^4.15.1"
+  },
+  "dependencies": {}
+}
