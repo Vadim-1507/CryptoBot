@@ -5,7 +5,7 @@
     line-height: 1.2;
     color: var(--dark);
 }
-text.white {
+.text.white {
     color: var(--white);
 }
 

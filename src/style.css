@@ -26,22 +26,13 @@ img {
     width: 100%;
 }
 
+.segment {
+    width: 100%;
+}
+
 .container {
     margin: 0 auto;
     width: 1200px;
-}
-
-.offset_top20 {
-    padding: 20px 0;
-}
-
-.flex {
-    display: flex;
-}
-
-.flex.center {
-    justify-content: center;
-    align-items: center;
 }
 
 .mb_20 {
