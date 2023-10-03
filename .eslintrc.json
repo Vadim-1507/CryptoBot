@@ -11,21 +11,25 @@
         "allowImportExportEverywhere": true
     },
     "rules": {
-        "indent": [
-            "error",
-            4
-        ],
-        "linebreak-style": [
-            "error",
-            "unix"
-        ],
-        "quotes": [
-            "error",
-            "single"
-        ],
-        "semi": [
-            "error",
-            "always"
-        ]
-    }
+        "indent": ["error", 4],
+        "linebreak-style": ["error", "unix"],
+        "quotes": ["error", "single"],
+        "semi": ["error", "always"],
+        "no-underscore-dangle": [0],
+        "arrow-body-style": [1],
+        "max-len": ["warn", {
+            "ignoreStrings": true,
+            "ignoreRegExpLiterals": true,
+            "ignoreTemplateLiterals": true,
+            "code": 120
+        }],
+        "func-names": ["error", "never"],
+        "unicode-bom": "off",
+        "camelcase": "off",
+        "no-shadow": "off",
+        "no-trailing-spaces": "warn",
+        "function-paren-newline": "warn",
+        "spaced-comment": "warn"
+    },
+    "ignorePatterns": ["*.config.js"]
 }

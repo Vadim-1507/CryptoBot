@@ -24,9 +24,9 @@ module.exports = {
             {
                 test: /\.(svg|png|jpe?g|)$/i,
                 use: {
-                    loader: "file-loader",
+                    loader: 'file-loader',
                     options: {
-                        name: './assets/img/[name].[ext]',
+                        name: './assets/images/[name].[ext]',
                     },
                 },
             },
@@ -34,10 +34,10 @@ module.exports = {
                 test: /\.(css)$/,
                 use: ['style-loader', 'css-loader'],
             },
-            {
-                test: /\.(woff(2)?|eot|ttf|otf|svg|)$/,
-                type: 'asset/inline',
-            },
+            // {
+            //     test: /\.(woff(2)?|eot|ttf|otf|)$/,
+            //     type: 'asset/inline',
+            // },
         ],
     },
     plugins: [

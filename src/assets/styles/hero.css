@@ -1,0 +1,50 @@
+.hero {
+    width: 100%;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.hero_content {
+    flex: 2;
+}
+
+.hero_avatar {
+    width: 96px;
+    height: 96px;
+    border-radius: 50%;
+    overflow: hidden;
+    background: var(--white);
+}
+
+.hero_avatar:not(.hero_avatar:first-child) {
+    margin-left: -24px;
+}
+
+.hero_avatar_img {
+    border-radius: 50%;
+    overflow: hidden;
+    height: 88px;
+    width: 88px;
+}
+
+.hero_phone {
+    display: flex;
+    flex: 1%;
+    justify-content: center;
+}
+
+.hero_phone__wrap {
+    position: relative;
+    width: 326px;
+    padding-top: 166%;
+}
+
+.hero_phone__image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+

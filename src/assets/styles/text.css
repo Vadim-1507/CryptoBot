@@ -1,0 +1,18 @@
+.text {
+    margin: 0;
+    font-size: 5rem;
+    font-weight: 400;
+    line-height: 1.2;
+    color: var(--dark);
+}
+text.white {
+    color: var(--white);
+}
+
+.text .bold {
+    font-weight: 500;
+}
+
+.text .backlight {
+    color: var(--blue);
+}
