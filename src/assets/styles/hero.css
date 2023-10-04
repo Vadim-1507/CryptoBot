@@ -42,11 +42,10 @@
     justify-content: center;
 }
 
-.hero_phone__wrap {
-    position: relative;
-    width: 326px;
-    padding-top: 166%;
+.hero_phone-wrap {
+    width: 80%;
 }
+
 
 .hero_phone__image {
     position: absolute;

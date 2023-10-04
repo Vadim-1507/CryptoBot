@@ -17,7 +17,7 @@ import './assets/images/ava_alian.svg';
 import './assets/images/ava_star.svg';
 import './assets/images/ava_alpaca.svg';
 import './assets/images/ava_dog.svg';
-import './assets/images/img_phone.png';
+import './assets/images/phone.png';
 import './assets/images/cat.svg';
 import './assets/images/money.svg';
 import './assets/images/star.svg';
