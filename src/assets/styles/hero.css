@@ -11,7 +11,7 @@
 }
 
 .hero_content {
-    flex: 2;
+    flex: 1.5;
 }
 
 .hero_avatar {
@@ -38,7 +38,7 @@
 
 .hero_phone {
     display: flex;
-    flex: 1%;
+    flex: 1;
     justify-content: center;
 }
 

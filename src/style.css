@@ -13,13 +13,22 @@ body {
 
 .white_theme {
     --blue: #41A4DF;
+    --blue-dim: #96ADC6;
     --blue-deep: #297EE2;
+    --blue-dark: #034AAB;
     --blue-transparent-12: rgba(41, 126, 226, 0.12);
     --blue-transparent-16: rgba(65, 164, 223, 0.16);
     --white: #ffffff;
     --white-transparent-60: rgba(255, 255, 255, 0.6);
+    --white-transparent-24: rgba(255, 255, 255, 0.24);
     --dark: #0D0D12;
+    --dark-transparent-40: rgba(17, 17, 17, 0.40);
+    --dark-blue: #232328;
     --black_transparent_30: rgba(0, 0, 0, .3);
+    --pink-gradient: linear-gradient(340deg, #FAACA8 8.42%, #DDD6F3 91.45%);
+    --yellow-gradient: linear-gradient(207deg, #FCB69F 6.91%, #FFECD2 92.45%);
+    --blue-gradient: linear-gradient(0deg, #C2E9FB -16.6%, #A1C4FD 106.15%);
+    --lightblue-gradient: linear-gradient(233deg, #9FCCFA -20.48%, #0974F1 97.38%);
 }
 
 img {
@@ -33,6 +42,10 @@ img {
 .container {
     margin: 0 auto;
     width: 1200px;
+}
+
+.offsets_bottom {
+    margin-bottom: 120px;
 }
 
 .mb_20 {

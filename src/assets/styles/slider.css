@@ -1,0 +1,47 @@
+.slider {
+    padding: 24.5rem 0;
+    display: flex;
+    align-items: center;
+    gap: 83px;
+}
+
+.slide {
+    padding: 24.5rem 0;
+}
+
+.slider_list {
+    overflow: hidden;
+    flex: 1;
+}
+
+.slider_dots {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    align-items: center;
+    height: 350px;
+}
+
+.slide_number, .slide_count {
+    font-size: 3.5rem;
+    font-weight: 500;
+    line-height: 1.2;
+    color: var(--white);
+}
+
+.slide_dots {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.slide_dot {
+    width: 1rem;
+    flex: 1;
+    background: var(--white-transparent-24);
+}
+
+.slide_dot.active {
+    background: var(--blue);
+}

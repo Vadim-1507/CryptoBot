@@ -1,0 +1,81 @@
+.user-cases {
+    background: var(--dark-blue);
+}
+
+.user-case {
+    display: flex;
+    align-items: center;
+    gap: 11%;
+}
+
+.user-case_square {
+    flex: 1;
+}
+
+.user-case_messages {
+    padding-top: 100%;
+    width: 100%;
+    position: relative;
+    border-radius: 40px;
+    overflow: hidden;
+}
+
+.user-case_messages__wrap {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        padding: 42px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 5px;
+}
+
+.user-case_messages__wrap.codes {
+    gap: 3.5rem
+}
+
+.pointer {
+    position: absolute;
+    bottom: -20%;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+    width: 11.2rem;
+    height: 11.2rem;
+    border-radius: 3.4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2px;
+    background: var(--lightblue-gradient);
+}
+
+.pointer .arrow {
+    width: 100%;
+    height: 100%;
+}
+
+.user-case_messages.pink {
+    background: var(--pink-gradient);
+}
+
+.user-case_messages.yellow {
+    background: var(--yellow-gradient);
+}
+
+.user-case_messages.blue {
+    background: var(--blue-gradient);
+}
+
+.user-case_description {
+    flex: 1;
+}
+
+.user-case_about {
+    margin-bottom: 8rem;
+}
