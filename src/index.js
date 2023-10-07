@@ -41,8 +41,3 @@ import './assets/images/net.svg';
 import './assets/images/php.svg';
 import './assets/images/python.svg';
 import './assets/images/go.svg';
-
-
-const $root = document.getElementById('root');
-console.log($root);
-$root.append('Все Будет сдорово, все будет красиво');
