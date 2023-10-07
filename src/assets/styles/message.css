@@ -60,10 +60,9 @@
     transition: .2s;
 }
 
-.message.button.active {
+.message.button.active, .message.button:hover {
     background: rgba(32, 114, 172, 0.82);
 }
-
 
 .allocate, .back_arrow {
     display: flex;

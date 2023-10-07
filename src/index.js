@@ -1,6 +1,5 @@
 'use strict';
 import './assets/styles/button.css';
-import './assets/styles/header.css';
 import './assets/styles/message.css';
 import './assets/styles/code.css';
 import './style.css';
