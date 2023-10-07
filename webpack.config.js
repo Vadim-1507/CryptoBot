@@ -1,6 +1,7 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
-const miniCss = require('mini-css-extract-plugin');
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+const worker_threads = require('worker_threads');
 
 module.exports = {
     entry: {
@@ -19,31 +20,31 @@ module.exports = {
             },
             {
                 test: /\.(svg|png|jpe?g|)$/i,
-                type: 'asset/resource',
                 use: {
+                    loader: 'file-loader',
                     options: {
-                        name: './assets/images/[name].[ext]',
+                        name: 'assets/images/[name].[ext]',
                     },
                 },
             },
             {
                 test: /\.css$/,
-                use: [miniCss.loader, 'css-loader'],
+                use: [
+                    MiniCssExtractPlugin.loader,
+                    'css-loader',
+                ],
             },
-            // {
-            //     test: /\.(woff(2)?|eot|ttf|otf|)$/,
-            //     type: 'asset/resource',
-            //     use: {
-            //         options: {
-            //             name: './assets/fonts/[name].[ext]',
-            //         },
-            //     },
-            // },
+            {
+                test: /\.(woff(2)?|eot|ttf|otf|)$/,
+                type: 'asset/resource',
+
+            },
         ],
     },
     plugins: [
-        new miniCss({
+        new MiniCssExtractPlugin({
             filename: 'style.css',
+            linkType: 'text/css',
         }),
         new HtmlWebpackPlugin({
             inject: 'body',
