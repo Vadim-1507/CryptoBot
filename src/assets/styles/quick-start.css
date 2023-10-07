@@ -1,7 +1,10 @@
 .quick-start {
     display: flex;
-    flex-direction: column;
     gap: 10rem
+}
+
+.quick-start, .quick-start_step__desc, .quick-start_step__content {
+    flex-direction: column;
 }
 
 .quick-start_step {
@@ -12,26 +15,20 @@
 
 .quick-start_step__desc {
     display: flex;
-    flex-direction: column;
     gap: 5rem;
-    flex: 1;
     align-items: flex-start;
 }
 
 .quick-start_step__number {
+    border-radius: 50%;
     padding: 9px 22px;
     font-size: 10.5rem;
     font-weight: 600;
     line-height: 1.1;
     letter-spacing: -1.26px;
     color: var(--white);
-    border-radius: 50%;
     background: var(--dark-gradient);
     box-shadow: 0 0 8px 0 rgba(182, 186, 191, 0.04), 0 2px 3px 0 rgba(0, 0, 0, 0.02);
-}
-
-.quick-start_step__visual {
-    flex: 1.2;
 }
 
 .quick-start_step__example {
@@ -41,30 +38,9 @@
 }
 
 .quick-start_step__content {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
     border-radius: 40px;
-    display: flex;
-    flex-direction: column;
     gap: 1rem;
-    justify-content: center;
-    align-items: center;
     padding: 17%;
-}
-
-.quick-start_step__content.purple {
-    background: var(--purple-gradient);
-}
-
-.quick-start_step__content.yellow {
-    background: var(--yellow-gradient);
-}
-
-.quick-start_step__content.blue {
-    background: var(--blue-gradient);
 }
 
 .quick-start_step__content .message.link {

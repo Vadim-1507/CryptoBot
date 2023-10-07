@@ -1,26 +1,4 @@
 .code_place {
-    background: var(--dark);
+    background: #0D0D12;
     padding: 17px;
-}
-.code {
-    font-family: 'SF Mono', serif;
-    font-weight: 400;
-    font-size: 4.3rem;
-    line-height: 1.5;
-    letter-spacing: -0.596px;
-    margin: 0;
-    padding: 0;
-    color: #ffffff;
-}
-
-.code .key {
-    color: #5DB0E2;
-}
-
-.code .logic {
-    color: #D46565;
-}
-
-.code .number {
-    color: #FCEF8F;
 }

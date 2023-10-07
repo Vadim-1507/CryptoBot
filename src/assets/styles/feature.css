@@ -2,13 +2,18 @@
     padding: 6rem 0;
 }
 
-.features, .features_horizontal, .features_vertical {
+.features, .features_vertical, .feature_currency, .telegram_chat, .feature_one-click, .feature_real-time,
+.feature_payment, .feature_payment__animation, .feature_coins, .feature_coins__messages {
     display: flex;
+    flex-direction: column;
+}
+
+.features, .features_horizontal, .features_vertical, .feature_payment, .feature_coins {
     gap: 5rem;
 }
 
-.features, .features_vertical {
-    flex-direction: column;
+.features_horizontal {
+    display: flex;
 }
 
 .features_vertical .feature {
@@ -21,7 +26,7 @@
     background: var(--background-light);
 }
 
-.feature_currency_desc {
+.feature_currency__title {
     margin-bottom: 10.5rem;
 }
 
@@ -31,38 +36,24 @@
 }
 
 .feature_currency {
-    display: flex;
-    flex-direction: column;
     gap: 2rem;
     flex: 1;
     align-items: center;
     max-width: 24rem;
 }
 
-.feature_currency__logo {
+.feature_real-time__wrap, .feature_currency__logo {
     width: 100%;
     padding-top: 100%;
+}
+
+.feature_real-time__logo, .feature_currency__logo, .feature_real-time__static {
+    overflow: hidden;
+}
+
+.feature_currency__logo {
     position: relative;
     border-radius: 50%;
-    overflow: hidden;
-    transition: .2s;
-}
-
-.feature_currency_image {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-}
-
-.feature_currency__name {
-    color: var(--dark-transparent-40);
-    padding: 1rem 3rem;
-    font-size: 3.5rem;
-    font-weight: 500;
-    line-height: 1.2;
-    text-transform: uppercase;
     transition: .2s;
 }
 
@@ -70,13 +61,11 @@
     transform: scale(1.08);
 }
 
-.feature_currency:hover .feature_currency__name {
-    color: var(--dark);
+.feature_currency:hover .description {
+    color: var(--dark-transparent-80);
 }
 
 .telegram_chat {
-    display: flex;
-    flex-direction: column;
     gap: 1.25rem;
     padding: 11.75rem 18.75rem;
     background-color: var(--blue);
@@ -90,8 +79,6 @@
 }
 
 .feature_one-click, .feature_real-time {
-    display: flex;
-    flex-direction: column;
     gap: 4rem;
     height: 100%;
 }
@@ -130,23 +117,15 @@
     outline: none;
 }
 
-.feature_real-time__animation, .feature_real-time__crypto {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
 .feature_real-time__animation {
+    cursor: pointer;
     flex: 1;
 }
 
 .feature_real-time-arrows {
     margin: 0 -3rem 0 -3.5rem;
-    display: flex;
     padding: 1rem 3rem;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
     border-radius: 19px;
     border: 1px solid #ffffff;
     background: var(--white-transparent-60);
@@ -169,42 +148,24 @@
 .feature_real-time__static {
     position: relative;
     width: 24rem;
-    border: 1rem solid #ffffff;
+    border: 1rem solid var(--white);
     border-radius: 50%;
-    overflow: hidden;
     box-shadow: 0 0 16px 0 rgba(182, 186, 191, 0.04), 0 4px 6px 0 rgba(0, 0, 0, 0.02);
 }
 
-.feature_real-time__wrap {
-    width: 100%;
-    padding-top: 100%;
-}
-
-.feature_real-time__logo {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden;
-}
-
 .feature_real-time__logo.dark {
-    background: linear-gradient(220deg, #010417 10.26%, #2B333F 84.25%), linear-gradient(46deg, #000 15.89%, #434343 171.16%);
+    background: var(--dark-gradient);
 }
 
-.feature_real-time__logo.green {
+.feature_real-time__logo.usdt {
     background: linear-gradient(25deg, #8DDAD5 -22.31%, #1BA27A 65.28%);
 }
 
-.feature_real-time__logo.yellow {
+.feature_real-time__logo.btc {
     background: linear-gradient(30deg, #FF930F -50.58%, #FBC411 93.3%);
 }
 
-.feature_real-time__logo.blue {
+.feature_real-time__logo.ton {
     background: linear-gradient(211deg, #04BEFE -2.24%, #4481EB 108.4%);
 }
 
@@ -217,30 +178,13 @@
     color: #ffffff;
 }
 
-.feature_payment {
-    display: flex;
-    flex-direction: column;
-    gap: 5rem;
-}
-
 .feature_payment__animation {
-    border-radius: 32px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
     padding: 5.25rem;
     background: var(--lightblue-gradient);
 }
 
 .feature_coins_wrap {
     padding-top: 0;
-}
-
-.feature_coins {
-    display: flex;
-    flex-direction: column;
-    gap: 5rem;
 }
 
 .feature_coins__animation {
@@ -256,17 +200,10 @@
 }
 
 .feature_coins__messages {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
     padding: 6% 15% 0;
-    display: flex;
-    flex-direction: column;
     align-items: center;
 }
 

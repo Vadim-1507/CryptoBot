@@ -6,13 +6,13 @@
     align-items: center;
 }
 
+.footer {
+    padding: 20rem 0 10rem;
+}
+
 .header_content, .footer_content {
     display: flex;
     justify-content: space-between;
-}
-
-.footer_content {
-    padding: 20rem 0 10rem;
 }
 
 .header_logo, .footer_logo {

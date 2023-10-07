@@ -1,4 +1,14 @@
 @import "assets/font/font.css";
+@import "assets/styles/list.css";
+@import "assets/styles/layout.css";
+@import "assets/styles/typography.css";
+@import "assets/styles/util_styles.css";
+@import 'assets/styles/hero.css';
+@import 'assets/styles/slider.css';
+@import 'assets/styles/feature.css';
+@import 'assets/styles/quick-start.css';
+@import 'assets/styles/api.css';
+@import 'assets/styles/community.css';
 
 html {
     font-size: 4px;
@@ -8,96 +18,35 @@ body {
     font-family: Inter, serif;
     padding: 0;
     margin: 0;
-    --transition: .4s;
+    --mobile-breakpoint: 576px;
 }
 
 .white_theme {
+    --white: #ffffff;
     --grey: #F7F9FB;
+    --dark-grey: #232328;
+    --dark: #0D0D12;
     --blue: #41A4DF;
     --blue-dim: #96ADC6;
     --blue-deep: #297EE2;
     --blue-dark: #034AAB;
+    --background-light: #F7F9FB;
     --blue-transparent-12: rgba(41, 126, 226, 0.12);
     --blue-transparent-16: rgba(65, 164, 223, 0.16);
-    --white: #ffffff;
-    --white-transparent-60: rgba(255, 255, 255, 0.6);
     --white-transparent-24: rgba(255, 255, 255, 0.24);
-    --dark: #0D0D12;
+    --white-transparent-60: rgba(255, 255, 255, 0.6);
     --dark-transparent-40: rgba(17, 17, 17, 0.40);
-    --dark-blue: #232328;
-    --background-light: #F7F9FB;
+    --dark-transparent-80: rgba(17, 17, 17, 0.80);
     --black_transparent_30: rgba(0, 0, 0, .3);
     --pink-gradient: linear-gradient(340deg, #FAACA8 8.42%, #DDD6F3 91.45%);
     --yellow-gradient: linear-gradient(207deg, #FCB69F 6.91%, #FFECD2 92.45%);
     --blue-gradient: linear-gradient(0deg, #C2E9FB -16.6%, #A1C4FD 106.15%);
+    --purple-gradient: linear-gradient(297deg, #8EC5FC 8.25%, #E0C3FC 91.76%);
     --lightblue-gradient: linear-gradient(233deg, #9FCCFA -20.48%, #0974F1 97.38%);
     --three-lightblue-gradient: linear-gradient(98deg, #E8F2F9 15.04%, #E8F2F9 52.22%, #E9F1FA 90.93%);
-    --purple-gradient: linear-gradient(297deg, #8EC5FC 8.25%, #E0C3FC 91.76%);
     --dark-gradient: linear-gradient(220deg, #010417 10.26%, #2B333F 84.25%), linear-gradient(46deg, #000 15.89%, #434343 171.16%);
 }
 
-img {
-    width: 100%;
-}
-
-.segment {
-    width: 100%;
-}
-
-.segment.grey {
-    background: var(--grey);
-}
-
-.segment.white {
-    background: var(--white);
-}
-
-.segment.last {
-    border-radius: 0 0 40px 40px;
-}
-
-.container {
-    margin: 0 auto;
-    width: 1200px;
-}
-
-.offsets_top {
-    padding-top: 30rem;
-}
-
-.offsets_bottom {
-    padding-bottom: 30rem;
-}
-
-.mb_20 {
-    margin-bottom: 5rem;
-}
-
-.mb_32 {
-    margin-bottom: 8rem;
-}
-
-.mb_56 {
-    margin-bottom: 14rem;
-}
-
-.width_60 {
-    flex: 1.2;
-}
-
-.width_40 {
-    flex: 1;
-}
-
-.list {
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
-    margin: 0;
-    padding-inline-start: 8rem;
-}
-
-.list.numeric {
-    padding: 0;
-    list-style-position: inside;
+body.white_theme {
+    background: var(--dark-grey);
 }

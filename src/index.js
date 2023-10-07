@@ -1,18 +1,8 @@
 'use strict';
 import './assets/styles/button.css';
 import './assets/styles/header.css';
-import './assets/styles/title.css';
-import './assets/styles/text.css';
-import './assets/styles/hero.css';
-import './assets/styles/user-case.css';
-import './assets/styles/slider.css';
 import './assets/styles/message.css';
 import './assets/styles/code.css';
-import './assets/styles/feature.css';
-import './assets/styles/link.css';
-import './assets/styles/quick-start.css';
-import './assets/styles/api.css';
-import './assets/styles/community.css';
 import './style.css';
 
 import './assets/images/logo.svg';

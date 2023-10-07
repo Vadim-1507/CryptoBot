@@ -1,0 +1,61 @@
+.offsets_top {
+    padding-top: 30rem;
+}
+
+.offsets_bottom {
+    padding-bottom: 30rem;
+}
+
+.mb_20 {
+    margin-bottom: 5rem;
+}
+
+.mb_24 {
+    margin-bottom: 6rem;
+}
+
+.mb_32 {
+    margin-bottom: 8rem;
+}
+
+.mb_56 {
+    margin-bottom: 14rem;
+}
+
+.flex_width_60 {
+    flex: 1.2;
+}
+
+.flex_width_40 {
+    flex: 1;
+}
+
+.full_size {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.flex_center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.background_yellow_grad {
+    background: var(--yellow-gradient);
+}
+
+.background_pink_grad {
+    background: var(--pink-gradient);
+}
+
+.background_blue_grad {
+    background: var(--blue-gradient);
+}
+
+.background_purple_grad {
+    background: var(--purple-gradient);
+}

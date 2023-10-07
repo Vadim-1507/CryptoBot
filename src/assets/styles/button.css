@@ -6,7 +6,7 @@
     border-radius: 900px;
     border: none;
     cursor: pointer;
-    transition: var(--transition);
+    transition: .2s;
 }
 
 .button:focus, .button.active {
