@@ -1,5 +1,5 @@
 .button {
-    padding: 18px 42px;
+    padding: 4.5rem 10.5rem;
     font-size: 5rem;
     font-weight: 500;
     line-height: 1.2;
@@ -40,4 +40,11 @@
 
 .button.white:hover {
     border-color: var(--white);
+}
+
+@media only screen and (max-width: var(--mobile-breakpoint)) {
+    .button {
+        padding: 3rem 8rem;
+        font-size: 4.5rem;
+    }
 }

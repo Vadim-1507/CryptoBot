@@ -1,18 +1,14 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
-const webpack = require('webpack');
+const miniCss = require('mini-css-extract-plugin');
 
-
-if (webpack.mode === 'development') {
-
-}
 module.exports = {
     entry: {
         index: path.resolve(__dirname, './src/index.js'),
     },
     output: {
         path: path.resolve(__dirname, './dist'),
-        filename: '[name].js',
+        filename: 'index.js',
     },
     module: {
         rules: [
@@ -23,24 +19,32 @@ module.exports = {
             },
             {
                 test: /\.(svg|png|jpe?g|)$/i,
+                type: 'asset/resource',
                 use: {
-                    loader: 'file-loader',
                     options: {
                         name: './assets/images/[name].[ext]',
                     },
                 },
             },
             {
-                test: /\.(css)$/,
-                use: ['style-loader', 'css-loader'],
+                test: /\.css$/,
+                use: [miniCss.loader, 'css-loader'],
             },
-            {
-                test: /\.(woff(2)?|eot|ttf|otf|)$/,
-                type: 'asset/inline',
-            },
+            // {
+            //     test: /\.(woff(2)?|eot|ttf|otf|)$/,
+            //     type: 'asset/resource',
+            //     use: {
+            //         options: {
+            //             name: './assets/fonts/[name].[ext]',
+            //         },
+            //     },
+            // },
         ],
     },
     plugins: [
+        new miniCss({
+            filename: 'style.css',
+        }),
         new HtmlWebpackPlugin({
             inject: 'body',
             scriptLoading: 'blocking',

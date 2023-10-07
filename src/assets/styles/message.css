@@ -4,9 +4,9 @@
     position: relative;
     border-radius: 18px;
     width: 100%;
-    padding: 10px 17px;
-    background: var(--white);
-    color: var(--dark);
+    padding: 2.5rem 4.25rem;
+    background: #ffffff;
+    color: #0D0D12;
     font-size: 5rem;
     line-height: 1.15;
     letter-spacing: -0.596px;
@@ -26,7 +26,7 @@
 }
 
 .message.big {
-    padding-bottom: 32px;
+    padding-bottom: 8rem;
 }
 
 .message.preview {
@@ -40,19 +40,21 @@
     box-shadow: 0 -2px 20px 0 rgba(0, 0, 0, 0.02);
 }
 
+.message.codes {
+    background: #0D0D12;
+    padding: 4.25rem;
+}
+
 .message.link {
-    color: var(--white);
+    color: #ffffff;
     font-weight: 500;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: var(--blue-dim);
+    background: #96ADC6;
     padding: 15px;
 }
 
 .message.button {
     font-weight: 500;
-    color: var(--white);
+    color: #ffffff;
     padding: 3.75rem 0;
     display: flex;
     justify-content: center;
@@ -65,9 +67,6 @@
 }
 
 .allocate, .back_arrow {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     gap: 1.5rem;
 }
 
@@ -77,7 +76,7 @@
 
 .message.button.active .allocate:before, .message.button.active .allocate:after {
     content: '\2022';
-    color: var(--white);
+    color: #ffffff;
 }
 
 .message.last_triangle:before {
@@ -85,11 +84,11 @@
     width: 0;
     height: 0;
     position: absolute;
-    left: -8px;
+    left: -2rem;
     bottom: 0;
     border: 0 solid transparent;
     border-top-width: 29px;
-    border-right: 24px solid var(--white);
+    border-right: 24px solid #ffffff;
     border-bottom-right-radius: 20px;
 }
 
@@ -100,8 +99,8 @@
 
 .link_arrow, .link_arrow:before, .link_arrow:after {
     position: absolute;
-    width: 2px;
-    height: 7px;
+    width: .5rem;
+    height: 1.75rem;
     border-radius: 2px;
     background: #ffffff;
 }
@@ -120,16 +119,8 @@
     font-weight: 700;
 }
 
-.message .semi_bold {
-    font-weight: 600;
-}
-
-.message .medium {
-    font-weight: 500;
-}
-
 .message .name {
-    color: var(--blue-dark);
+    color: #034AAB;
 }
 
 .message.preview .sender {
@@ -147,11 +138,6 @@
 }
 
 .sender_wrapper .avatar {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
     overflow: hidden;
     border-radius: 50%;
 }
@@ -166,7 +152,7 @@
 .message_time {
     position: absolute;
     font-size: 3.85rem;
-    color: var(--dark-transparent-40);
+    color: rgba(17, 17, 17, 0.40);
     line-height: 1.37;
     right: 4.25rem;
     bottom: 2.5rem;
