@@ -1,0 +1,275 @@
+.features {
+    padding: 6rem 0;
+}
+
+.features, .features_horizontal, .features_vertical {
+    display: flex;
+    gap: 5rem;
+}
+
+.features, .features_vertical {
+    flex-direction: column;
+}
+
+.features_vertical .feature {
+    flex: 1;
+}
+
+.feature {
+    padding: 10.5rem 14rem;
+    border-radius: 40px;
+    background: var(--background-light);
+}
+
+.feature_currency_desc {
+    margin-bottom: 10.5rem;
+}
+
+.feature_currencies {
+    display: flex;
+    justify-content: space-between;
+}
+
+.feature_currency {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    flex: 1;
+    align-items: center;
+    max-width: 24rem;
+}
+
+.feature_currency__logo {
+    width: 100%;
+    padding-top: 100%;
+    position: relative;
+    border-radius: 50%;
+    overflow: hidden;
+    transition: .2s;
+}
+
+.feature_currency_image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.feature_currency__name {
+    color: var(--dark-transparent-40);
+    padding: 1rem 3rem;
+    font-size: 3.5rem;
+    font-weight: 500;
+    line-height: 1.2;
+    text-transform: uppercase;
+    transition: .2s;
+}
+
+.feature_currency:hover .feature_currency__logo {
+    transform: scale(1.08);
+}
+
+.feature_currency:hover .feature_currency__name {
+    color: var(--dark);
+}
+
+.telegram_chat {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+    padding: 11.75rem 18.75rem;
+    background-color: var(--blue);
+    border-radius: 24px;
+    margin-bottom: 6rem;
+}
+
+.feature_small_messages {
+    display: flex;
+    gap: 1.25rem;
+}
+
+.feature_one-click, .feature_real-time {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+    height: 100%;
+}
+
+.feature_one-click__animation {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    flex: 1;
+    padding: 9.25rem;
+}
+
+.feature_one-click__arrow {
+    position: absolute;
+    z-index: 1;
+    right: 9.25rem;
+    bottom: 1.25rem
+}
+
+.feature_one-click__button {
+    padding: 4.5rem 9.75rem;
+    border: none;
+    border-radius: 17px;
+    color: var(--dark);
+    font-size: 5.5rem;
+    font-weight: 500;
+    line-height: 1.2;
+    max-height: 15.5rem;
+}
+
+.feature_one-click__button img {
+    width: 5.25rem;
+}
+
+.feature_one-click__button:active, .feature_one-click__button:focus {
+    outline: none;
+}
+
+.feature_real-time__animation, .feature_real-time__crypto {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.feature_real-time__animation {
+    flex: 1;
+}
+
+.feature_real-time-arrows {
+    margin: 0 -3rem 0 -3.5rem;
+    display: flex;
+    padding: 1rem 3rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 19px;
+    border: 1px solid #ffffff;
+    background: var(--white-transparent-60);
+    backdrop-filter: blur(2rem);
+    z-index: 2;
+}
+
+.feature_real-time__currency {
+    width: 26rem;
+}
+
+.feature_real-time__currency:not(.active) {
+    margin-right: -17rem;
+}
+
+.feature_real-time__currency:not(.active) svg {
+    opacity: 0;
+}
+
+.feature_real-time__static {
+    position: relative;
+    width: 24rem;
+    border: 1rem solid #ffffff;
+    border-radius: 50%;
+    overflow: hidden;
+    box-shadow: 0 0 16px 0 rgba(182, 186, 191, 0.04), 0 4px 6px 0 rgba(0, 0, 0, 0.02);
+}
+
+.feature_real-time__wrap {
+    width: 100%;
+    padding-top: 100%;
+}
+
+.feature_real-time__logo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.feature_real-time__logo.dark {
+    background: linear-gradient(220deg, #010417 10.26%, #2B333F 84.25%), linear-gradient(46deg, #000 15.89%, #434343 171.16%);
+}
+
+.feature_real-time__logo.green {
+    background: linear-gradient(25deg, #8DDAD5 -22.31%, #1BA27A 65.28%);
+}
+
+.feature_real-time__logo.yellow {
+    background: linear-gradient(30deg, #FF930F -50.58%, #FBC411 93.3%);
+}
+
+.feature_real-time__logo.blue {
+    background: linear-gradient(211deg, #04BEFE -2.24%, #4481EB 108.4%);
+}
+
+.feature_real-time__logo.dollar:before {
+    content: '$';
+    font-size: 56px;
+    font-weight: 500;
+    line-height: 1.1;
+    letter-spacing: -1.68px;
+    color: #ffffff;
+}
+
+.feature_payment {
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+}
+
+.feature_payment__animation {
+    border-radius: 32px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 5.25rem;
+    background: var(--lightblue-gradient);
+}
+
+.feature_coins_wrap {
+    padding-top: 0;
+}
+
+.feature_coins {
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+}
+
+.feature_coins__animation {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.feature_coins__image {
+    position: relative;
+    width: 100%;
+    padding-top: 60%;
+}
+
+.feature_coins__messages {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    padding: 6% 15% 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.feature_coins__messages .behind {
+    margin-bottom: -27%;
+}

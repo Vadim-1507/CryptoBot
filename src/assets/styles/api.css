@@ -1,0 +1,17 @@
+.api {
+    background: var(--lightblue-gradient);
+    border-radius: 40px;
+}
+
+.api_wrapper {
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    padding: 12% 7.3%;
+}
+
+.api_content {
+    width: 40%;
+}

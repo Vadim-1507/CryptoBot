@@ -1,0 +1,15 @@
+a.link {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 1.2;
+    color: var(--blue);
+    cursor: pointer;
+    text-decoration: none;
+    transition: var(--transition);
+    border-bottom: 1px solid transparent;
+}
+
+a.link:hover {
+    color: var(--blue-deep);
+    border-bottom-color: var(--blue-deep);
+}

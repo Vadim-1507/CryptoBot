@@ -10,10 +10,6 @@
     display: flex;
 }
 
-.hero_content {
-    flex: 1.5;
-}
-
 .hero_avatar {
     display: flex;
     justify-content: center;
@@ -38,7 +34,6 @@
 
 .hero_phone {
     display: flex;
-    flex: 1;
     justify-content: center;
 }
 

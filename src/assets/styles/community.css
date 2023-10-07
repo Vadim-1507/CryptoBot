@@ -1,0 +1,76 @@
+
+
+.community {
+    padding: 6rem 0 20rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10rem;
+}
+
+.community .community_title {
+    text-align: center;
+}
+
+.community_stack {
+    width: 83%;
+    display: flex;
+    gap: 6rem;
+}
+
+.community_stack__item {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4rem;
+    text-align: center;
+}
+
+.stack_wrapper {
+    width: 60%
+}
+
+.stack_logo {
+    position: relative;
+    padding-top: 100%;
+    border-radius: 50%;
+    overflow: hidden;
+    width: 100%;
+}
+
+.stack_logo_image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 8px 0 rgba(182, 186, 191, 0.04), 0 2px 3px 0 rgba(0, 0, 0, 0.02);
+}
+
+.stack_logo_image.js {
+    padding: 2rem;
+    background: linear-gradient(138deg, #83CD29 2.4%, #74BE1A 99.84%);
+}
+
+.stack_logo_image.net {
+    background: linear-gradient(147deg, #6B3FA0 6.9%, #552D85 90.43%);
+}
+
+.stack_logo_image.php {
+    background: linear-gradient(144deg, #6181B6 6.55%, #5979AE 94.62%);
+}
+
+.stack_logo_image.python {
+    padding: 12%;
+    background: linear-gradient(142deg, #242429 0.78%, #18181D 97.15%);
+}
+
+.stack_logo_image.go {
+    background: linear-gradient(145deg, #00ACD7 7%, #00A8D3 91.03%);
+}
+

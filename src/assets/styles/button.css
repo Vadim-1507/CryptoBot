@@ -34,9 +34,10 @@
 
 .button.white {
     color: var(--white);
-    background: var(--white-transparent-60);
+    background: transparent;
+    border: 1px solid var(--white-transparent-60);
 }
 
 .button.white:hover {
-    background: var(--white);
+    border-color: var(--white);
 }
