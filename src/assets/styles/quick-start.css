@@ -46,3 +46,9 @@
 .quick-start_step__content .message.link {
     background: #8198D1;
 }
+
+@media (max-width: 1220px) {
+    .quick-start_step__content {
+        padding: 6%;
+    }
+}

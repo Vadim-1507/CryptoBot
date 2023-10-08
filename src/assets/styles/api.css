@@ -7,6 +7,7 @@
     background-image: var(--api);
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: right;
     display: flex;
     justify-content: start;
     align-items: center;
@@ -19,4 +20,14 @@
     flex-direction: column;
     align-items: flex-start;
     gap: 8rem;
+}
+
+@media (max-width: 1220px) {
+    .api_wrapper {
+        padding: 10% 7%;
+    }
+
+    .api_content {
+        width: 60%;
+    }
 }

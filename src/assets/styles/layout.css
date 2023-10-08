@@ -22,3 +22,15 @@ img {
     margin: 0 auto;
     width: 1200px;
 }
+
+@media (max-width: 1220px) {
+    .container {
+        width: 950px;
+    }
+}
+
+@media all and (max-width: 980px) {
+    .container {
+        width: 90%;
+    }
+}

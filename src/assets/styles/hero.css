@@ -9,8 +9,20 @@
 .hero_about {
     display: flex;
     flex-direction: column;
+    align-items: flex-start;
     gap: 8rem;
     text-align: left;
+    margin-bottom: 14rem;
+}
+
+.hero_about .text {
+    width: 55%;
+}
+
+.hero_bots {
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
 }
 
 .hero_avatars {
@@ -44,11 +56,121 @@
     justify-content: center;
 }
 
-.hero_phone-wrap {
+.hero_phone__image {
     padding-top: 125%;
     width: 61%;
     background-image: var(--phone);
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
+}
+
+@media (max-width: 1220px) {
+    .hero_about .text {
+        width: 75%;
+    }
+
+    .hero_phone__image {
+        width: 80%;
+        padding-top: 170%;
+    }
+}
+
+@media (max-width: 980px) {
+    .hero_about {
+        margin-bottom: 10rem;
+    }
+
+    .hero_phone__image {
+        width: 100%;
+        padding-top: 150%;
+    }
+
+    .hero_avatar {
+        width: 20rem;
+        height: 20rem;
+    }
+
+    .hero_avatar_img {
+        height: 18rem;
+        width: 18rem;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .hero_about .text {
+        width: 100%;
+    }
+
+    .hero_phone__image {
+        padding-top: 165%;
+    }
+
+    .hero_avatar {
+        width: 19rem;
+        height: 19rem;
+    }
+
+    .hero_avatar_img {
+        height: 18rem;
+        width: 18rem;
+    }
+}
+
+@media only screen and (max-width: 670px) {
+    .hero {
+        flex-direction: column;
+    }
+
+    .hero_about {
+        gap: 6rem;
+        align-items: center;
+    }
+
+    .hero_about .text {
+        text-align: center;
+        width: 60%;
+    }
+
+    .hero_about {
+        margin-bottom: 6rem;
+    }
+
+    .hero_about .title {
+        text-align: center;
+    }
+
+    .hero_bots {
+        gap: 3rem;
+        align-items: center;
+    }
+
+    .hero_avatar {
+        width: 14.75rem;
+        height: 14.75rem;
+    }
+
+    .hero_avatar_img {
+        height: 14rem;
+        width: 14rem;
+    }
+
+    .hero_phone {
+        width: 100%;
+        padding: 8rem 0;
+    }
+
+    .hero_phone__image {
+        padding-top: 135%;
+    }
+}
+
+@media only screen and (max-width: 480px){
+    .hero_about .text {
+        width: 100%;
+    }
+
+    .hero_phone__image {
+        padding-top: 165%;
+    }
 }

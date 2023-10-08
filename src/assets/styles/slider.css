@@ -26,6 +26,10 @@
     color: #ffffff;
 }
 
+.slide_in_view {
+    width: 100%;
+}
+
 .slider_list {
     overflow: hidden;
     flex: 1;
@@ -33,6 +37,13 @@
 
 .slide {
     gap: 11%;
+}
+
+.slide_about {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8rem;
 }
 
 .slide_visual {
@@ -49,7 +60,7 @@
     gap: 5px;
 }
 
-.slide_visual__wrapper.codes {
+.slide_visual__wrapper.with_codes {
     gap: 3.5rem
 }
 
@@ -75,16 +86,113 @@
     z-index: 1;
     width: 11.2rem;
     height: 11.2rem;
-    border-radius: 12px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: .5rem;
-    background: var(--lightblue-gradient);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
 }
 
 .pointer .arrow {
     width: 100%;
     height: 100%;
+}
+
+@media (max-width: 1220px) {
+    .slider {
+        gap: 6rem
+    }
+
+    .slide {
+        gap: 4rem;
+    }
+}
+
+@media (max-width: 980px) {
+    .slider {
+        flex-direction: column;
+        gap: 8rem;
+        padding: 8rem 0;
+    }
+
+    .slide {
+        padding: 0 0 8rem;
+    }
+
+    .slide:last-child {
+        padding: 0;
+    }
+
+    .slide_visual__wrapper {
+        padding: 7rem;
+    }
+
+    .slide_visual__wrapper.with_codes {
+        gap: 2.5rem;
+    }
+
+    .slider_dots {
+        flex-direction: initial;
+        height: 5rem;
+        width: 60%;
+    }
+
+    .slide_dots {
+        flex-direction: initial;
+    }
+
+    .slide_dot {
+        height: 1rem;
+        width: initial;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    .slide {
+        flex-direction: column;
+        align-items: center;
+        gap: 8rem;
+    }
+
+    .slide_visual_wrap {
+        width: 50%;
+    }
+
+    .slide_about {
+        align-items: center;
+    }
+
+    .slide_about .title, .slide_about .text {
+        text-align: center;
+    }
+
+    .slider_dots {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 640px){
+    .slide_visual_wrap {
+        width: 60%;
+    }
+
+    .slide_button {
+        display: flex;
+        width: 100%;
+    }
+
+    .slide_button .button {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 550px){
+    .slide_visual_wrap {
+        width: 70%;
+    }
+
+}
+
+@media only screen and (max-width: 480px){
+    .slide_visual_wrap {
+        width: 100%;
+    }
 }

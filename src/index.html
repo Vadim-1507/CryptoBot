@@ -3,51 +3,46 @@
 <head>
     <meta charset="UTF-8">
     <title>CryptoBot</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body class="def white_theme">
-    <div id="header" class="segment white">
-        <div class="header">
-            <div class="container">
-                <div class="header_content">
-                    <div class="header_logo">
-                        <img src="./assets/images/logo.svg" alt="logo">
+    <div class="segment white">
+        <div id="header" class="header container">
+            <div class="header_content">
+                <div class="header_logo">
+                    <img src="./assets/images/logo.svg" alt="logo">
+                </div>
+                <div class="header_actions">
+                    <div class="header_menu flex_center">
+                        <a href="#user_case" class="header_menu_item">Use cases</a>
+                        <a href="#feature" class="header_menu_item">Features</a>
+                        <a href="#quick_start" class="header_menu_item">How to start</a>
                     </div>
-                    <div class="header_actions">
-                        <div class="header_menu flex_center">
-                            <a href="#user_case" class="header_menu_item">Use cases</a>
-                            <a href="#feature" class="header_menu_item">Features</a>
-                            <a href="#quick_start" class="header_menu_item">How to start</a>
-                        </div>
-                        <div class="header_buttons">
-                            <button id="theme_toggle" class="theme_toggle">
-                            </button>
-                            <a href="https://t.me/CryptoBot" target="_blank" class="button blue secondary">Get Started</a>
-                        </div>
+                    <div class="header_buttons">
+                        <button id="theme_toggle" class="theme_toggle">
+                        </button>
+                        <a href="https://t.me/CryptoBot" target="_blank" class="button blue secondary">Get Started</a>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-    <div id="hero" class="segment white">
         <div class="container offsets_bottom">
-            <div class="hero">
+            <div id="hero" class="hero">
                 <div class="hero_content flex_width_60">
-                    <div class="hero_about mb_56">
+                    <div class="hero_about">
                         <h1 class="title">
                             Crypto payments for
                             <span class="blue_color">telegram bots</span>
                         </h1>
                         <p class="text">
-                            Seamlessly accept crypto payments<br/> in your Telegram bots and services.
+                            Seamlessly accept crypto payments in your Telegram bots and services.
                         </p>
-                        <div>
-                            <a href="https://t.me/CryptoBot" target="_blank" class="button blue">
-                                Get started
-                            </a>
-                        </div>
+                        <a href="https://t.me/CryptoBot" target="_blank" class="button blue">
+                            Get started
+                        </a>
                     </div>
                     <div class="hero_bots">
-                        <div class="hero_avatars mb_20">
+                        <div class="hero_avatars">
                             <div class="hero_avatar center">
                                 <div class="hero_avatar_img">
                                     <img src="assets/images/ava_duck.svg" alt="duck">
@@ -80,131 +75,138 @@
                     </div>
                 </div>
                 <div class="hero_phone flex_width_40">
-                    <div class="hero_phone-wrap">
-                        <div class="hero_phone__image">
-                        </div>
+                    <div class="hero_phone__image">
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <div id="user_case" class="segment offsets_bottom">
+    <div id="user_case" class="segment">
         <div class="container slider">
-            <div class="slider_list">
-                <div class="slide">
-                    <div class="flex_width_40">
-                        <div class="slide_visual background_pink_grad">
-                            <div class="slide_visual__wrapper flex_center full_size">
-                                <div class="message">
-                                    &#128184; You sent 5,5 USDT ($5.50).
-                                    <br/><br/>
-                                    <span class="bold_text">Recipient:</span> GoodsBot
-                                    <br/><br/>
-                                    &#129534; 1 month of Blazing Fast VPN &#9889;
-                                    <div class="message_time">
-                                        21:25
+            <div id="slide_in_view" class="slide_in_view">
+                <div class="slider_list">
+                    <div class="slide">
+                        <div class="slide_visual_wrap flex_width_40">
+                            <div class="slide_visual background_pink_grad">
+                                <div class="slide_visual__wrapper flex_center full_size">
+                                    <div class="message big">
+                                        &#128184; You sent 5,5 USDT ($5.50).
+                                        <br/><br/>
+                                        <span class="bold_text">Recipient:</span> GoodsBot
+                                        <br/><br/>
+                                        &#129534; 1 month of Blazing Fast VPN &#9889;
+                                        <div class="message_time">
+                                            21:25
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="message last_triangle">
-                                    &#128273; Access key: VPN-X3Y7-Z1W9-R6T2-Q4V8
-                                    <div class="message_time">
-                                        21:25
+                                    <div class="message last_triangle">
+                                        <div class="message_content">
+                                            &#128273; Access key: VPN-X3Y7-Z1W9-R6T2-Q4V8
+                                        </div>
+                                        <div class="message_time">
+                                            21:25
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="flex_width_40">
-                        <h2 class="title white_color mb_32">
-                        <span class="blue_color">
-                            Instant<br/>Auto Sales:
-                        </span>
-                            <br/>
-                            Boost conversion
-                        </h2>
-                        <p class="text white_color mb_32">
-                            Immediately deliver digital products and services to your users.
-                        </p>
-                        <a href="https://help.crypt.bot/crypto-pay-api" target="_blank" class="button blue">Open API Docs</a>
-                    </div>
-                </div>
-                <div class="slide">
-                    <div class="flex_width_40">
-                        <div class="slide_visual background_yellow_grad">
-                            <div class="slide_visual__wrapper flex_center full_size">
-                                <div class="message first">
-                                    &#128184; You sent 3,5 TON ($5.08).
-                                    <br/><br/>
-                                    <span class="bold_text">Recipient:</span> Exclusive access to the channel
-                                    <br/><br/>
-                                    &#129534; Exclusive access to the channel &#128571;
-                                    <div class="message_time">
-                                        21:30
-                                    </div>
-                                </div>
-                                <div class="message link flex_center last">
-                                    <div class="link_arrow"></div>
-                                    View Channel
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="flex_width_40">
-                        <h2 class="title white_color mb_32">
-                            <span class="blue_color">
-                                Channels
+                        <div class="slide_about flex_width_40">
+                            <h2 class="title white_color">
+                                <span class="blue_color">
+                                    Instant Auto Sales:
+                                </span>
                                 <br/>
-                                integration:
-                            </span>
-                            <br/>
-                            Seamless access
-                        </h2>
-                        <p class="text white_color mb_32">
-                            Automatically unlock exclusive content to your users.
-                        </p>
-                        <a href="https://help.crypt.bot/crypto-pay-api" target="_blank" class="button blue">Open API Docs</a>
-                    </div>
-                </div>
-                <div class="slide">
-                    <div class="flex_width_40">
-                        <div class="slide_visual background_blue_grad">
-                            <div class="slide_visual__wrapper flex_center full_size codes">
-                                <div class="message big first">
-                                    &#128184; You sent 3,99 USDT ($3.99).
-                                    <br/><br/>
-                                    <span class="bold_text">Recipient:</span>
-                                    <span class="medium_text name">@StoresBot</span>
-                                    <br/><br/>
-                                    &#129534; One month of Premium access &#127775;
-                                    <div class="message_time">
-                                        22:10
-                                    </div>
-                                    <div class="pointer">
-                                        <svg fill="none" class="arrow">
-                                            <ellipse cx="22.9516" cy="13.4892" rx="2.74116" ry="2.74116" fill="white"/>
-                                            <ellipse cx="22.9516" cy="22.104" rx="2.74116" ry="2.74116" fill="white"/>
-                                            <path d="M24.3415 35.8337C23.6849 36.8464 22.2049 36.8464 21.5483 35.8337L18.1257 30.5551C17.4061 29.4453 18.2012 27.9782 19.5223 27.9782L26.3675 27.9782C27.6886 27.9782 28.4838 29.4453 27.7642 30.5551L24.3415 35.8337Z" fill="white"/>
-                                        </svg>
-                                    </div>
-                                </div>
-                                <div class="message last codes">
-                                    <pre class="code"><span class="blue_code">Invoice</span>(<br/>    <span class="blue_code">payload:</span> “item:monthly_premium”,<br/>    <span class="blue_code">status:</span> “paid”,<br/>    <span class="blue_code">amount:</span> “3.99”,<br/>    <span class="blue_code">asset:</span> “USDT”,<br/>)</pre>
-                                </div>
+                                Boost conversion
+                            </h2>
+                            <p class="text white_color">
+                                Immediately deliver digital products and services to your users.
+                            </p>
+                            <div class="slide_button">
+                                <a href="https://help.crypt.bot/crypto-pay-api" target="_blank" class="button blue">Open API Docs</a>
                             </div>
                         </div>
                     </div>
-                    <div class="flex_width_40">
-                        <h2 class="title white_color mb_32">
-                            <span class="blue_color">
-                                Endless<br/>customization:
-                            </span>
-                            <br/>
-                            with Webhooks
-                        </h2>
-                        <p class="text white_color mb_32">
-                            Receive successful payment notifications in real-time. Integrate to any scenario of your service.
-                        </p>
-                        <a href="https://help.crypt.bot/crypto-pay-api" target="_blank" class="button blue">Open API Docs</a>
+                    <div class="slide">
+                        <div class="slide_visual_wrap flex_width_40">
+                            <div class="slide_visual background_yellow_grad">
+                                <div class="slide_visual__wrapper flex_center full_size">
+                                    <div class="message big first">
+                                        &#128184; You sent 3,5 TON ($5.08).
+                                        <br/><br/>
+                                        <span class="bold_text">Recipient:</span> Exclusive access to the channel
+                                        <br/><br/>
+                                        &#129534; Exclusive access to the channel &#128571;
+                                        <div class="message_time">
+                                            21:30
+                                        </div>
+                                    </div>
+                                    <div class="message link flex_center last">
+                                        <div class="link_arrow"></div>
+                                        View Channel
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slide_about flex_width_40">
+                            <h2 class="title white_color">
+                                <span class="blue_color">
+                                    Channels integration:
+                                </span>
+                                <br/>
+                                Seamless access
+                            </h2>
+                            <p class="text white_color">
+                                Automatically unlock exclusive content to your users.
+                            </p>
+                            <div class="slide_button">
+                                <a href="https://help.crypt.bot/crypto-pay-api" target="_blank" class="button blue">Open API Docs</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <div class="slide_visual_wrap flex_width_40">
+                            <div class="slide_visual background_blue_grad">
+                                <div class="slide_visual__wrapper flex_center full_size with_codes">
+                                    <div class="message big first">
+                                        &#128184; You sent 3,99 USDT ($3.99).
+                                        <br/><br/>
+                                        <span class="bold_text">Recipient:</span>
+                                        <span class="medium_text name">@StoresBot</span>
+                                        <br/><br/>
+                                        &#129534; One month of Premium access &#127775;
+                                        <div class="message_time">
+                                            22:10
+                                        </div>
+                                        <div class="pointer" style="background-image: url('assets/images/pointer.svg')"></div>
+                                    </div>
+                                    <div class="message last codes">
+                                    <span class="code">
+                                        <span class="blue_code">Invoice</span>(<br/>
+                                        &#160;&#160;&#160;&#160;<span class="blue_code">payload:</span> “item:monthly_premium”,<br/>
+                                        &#160;&#160;&#160;&#160;<span class="blue_code">status:</span> “paid”,<br/>
+                                        &#160;&#160;&#160;&#160;<span class="blue_code">amount:</span> “3.99”,<br/>
+                                        &#160;&#160;&#160;&#160;<span class="blue_code">asset:</span> “USDT”,<br/>
+                                        )
+                                    </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slide_about flex_width_40">
+                            <h2 class="title white_color">
+                                <span class="blue_color">
+                                    Endless customization:
+                                </span>
+                                <br/>
+                                with Webhooks
+                            </h2>
+                            <p class="text white_color">
+                                Receive successful payment notifications in real-time. Integrate to any scenario of your service.
+                            </p>
+                            <div class="slide_button">
+                                <a href="https://help.crypt.bot/crypto-pay-api" target="_blank" class="button blue">Open API Docs</a>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -325,16 +327,8 @@
                                         &#127965; Create App
                                     </button>
                                     <div class="feature_one-click__arrow">
-                                        <svg width="43" height="47" viewBox="0 0 43 47" fill="none">
-                                            <path d="M11.1275 3.64677C6.7178 1.12449 1.36473 4.88154 2.23774 9.88607L7.45908 39.8172C8.51449 45.8673 16.9001 46.6127 19.006 40.8435L22.4947 31.2864C22.782 30.4994 23.5293 29.9749 24.3671 29.9723L34.541 29.9403C40.6824 29.921 42.8322 21.7813 37.5012 18.7321L11.1275 3.64677Z" fill="url(#paint0_linear_955_3950)" stroke="#F1F5F9" stroke-width="4"/>
-                                            <defs>
-                                                <linearGradient id="paint0_linear_955_3950" x1="1.90306" y1="-33.3301" x2="-24.3108" y2="39.2676" gradientUnits="userSpaceOnUse">
-                                                    <stop offset="0" stop-color="#9FCCFA"/>
-                                                    <stop offset="1" stop-color="#0974F1"/>
-                                                </linearGradient>
-                                            </defs>
-                                        </svg>
-                                    </div>
+                                        <div class="feature_one-click__mouse" style="background-image: url('assets/images/mouse.png')"></div>
+                                   </div>
                                 </div>
                                 <div>
                                     <h3 class="title mb_20">
@@ -388,10 +382,10 @@
                                         </div>
                                     </div>
                                     <div class="feature_real-time-arrows flex_center">
-                                        <svg width="21" height="11" viewBox="0 0 21 11" fill="none">
+                                        <svg class="feature_real-time-arrow" width="21" height="11" viewBox="0 0 21 11" fill="none">
                                             <path d="M1 5.45438H20.01M20.01 5.45438L15.5556 1M20.01 5.45438L15.5556 9.90876" stroke="#29313D" stroke-opacity="0.92" stroke-width="2" stroke-linecap="round" stroke-linejoin="bevel"/>
                                         </svg>
-                                        <svg width="21" height="12" viewBox="0 0 21 12" fill="none">
+                                        <svg class="feature_real-time-arrow" width="21" height="12" viewBox="0 0 21 12" fill="none">
                                             <path d="M20.0098 6.36319H0.999765M0.999765 6.36319L5.45415 1.90881M0.999765 6.36319L5.45415 10.8176" stroke="#29313D" stroke-opacity="0.92" stroke-width="2" stroke-linecap="round" stroke-linejoin="bevel"/>
                                         </svg>
                                     </div>
@@ -647,7 +641,14 @@
                         <div class="quick-start_step__example">
                             <div class="quick-start_step__content full_size flex_center background_yellow_grad">
                                 <div class="message codes">
-                                    <pre class="code">asset<span class="blue_code">=</span><span class="yellow_code">TON</span><span class="red_code">&</span>amount<span class="blue_code">=</span><span class="yellow_code">2.75</span><br/>{"asset":<span class="blue_code">"TON"</span>, "amount": <span class="blue_code">"2.75"</span>}</pre>
+                                    <span class="code">
+                                        asset<span class="blue_code">=</span>
+                                        <span class="yellow_code">TON</span>
+                                        <span class="red_code">&</span>amount<span class="blue_code">=</span>
+                                        <span class="yellow_code">2.75</span><br/>
+                                        {"asset":<span class="blue_code">"TON"</span>
+                                        , "amount": <span class="blue_code">"2.75"</span>}
+                                    </span>
                                 </div>
                             </div>
                         </div>
@@ -704,7 +705,14 @@
                         <div class="quick-start_step__example">
                             <div class="quick-start_step__content flex_center full_size background_blue_grad">
                                 <div class="message codes">
-                                    <pre class="code"><span class="blue_code">Invoice</span>(<br/>    <span class="blue_code">payload:</span> “item:monthly_premium”,<br/>    <span class="blue_code">status:</span> “paid”,<br/>    <span class="blue_code">amount:</span> “3.99”,<br/>    <span class="blue_code">asset:</span> “USDT”,<br/>)</pre>
+                                     <span class="code">
+                                        <span class="blue_code">Invoice</span>(<br/>
+                                        &#160;&#160;&#160;&#160;<span class="blue_code">payload:</span> “item:monthly_premium”,<br/>
+                                        &#160;&#160;&#160;&#160;<span class="blue_code">status:</span> “paid”,<br/>
+                                        &#160;&#160;&#160;&#160;<span class="blue_code">amount:</span> “3.99”,<br/>
+                                        &#160;&#160;&#160;&#160;<span class="blue_code">asset:</span> “USDT”,<br/>
+                                        )
+                                    </span>
                                 </div>
                             </div>
                         </div>
@@ -713,9 +721,9 @@
             </div>
         </div>
     </div>
-    <div id="api" class="segment white">
+    <div class="segment white last">
         <div class="container offsets_bottom offsets_top">
-            <div class="api">
+            <div id="api" class="api">
                 <div class="api_wrapper">
                     <div class="api_content">
                         <h2 class="title white_color">
@@ -731,10 +739,8 @@
                 </div>
             </div>
         </div>
-    </div>
-    <div id="community" class="segment white last">
         <div class="container">
-            <div class="community">
+            <div id="community" class="community">
                 <div class="community_title">
                     <h2 class="title mb_24">
                         Join dev community

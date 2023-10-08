@@ -29,3 +29,5 @@ import './assets/images/net.svg';
 import './assets/images/php.svg';
 import './assets/images/python.svg';
 import './assets/images/go.svg';
+import './assets/images/mouse.png';
+import './assets/images/pointer.svg';

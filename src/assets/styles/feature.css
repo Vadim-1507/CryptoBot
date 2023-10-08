@@ -33,6 +33,8 @@
 .feature_currencies {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 3rem;
 }
 
 .feature_currency {
@@ -40,6 +42,7 @@
     flex: 1;
     align-items: center;
     max-width: 24rem;
+    min-width: 14rem;
 }
 
 .feature_real-time__wrap, .feature_currency__logo {
@@ -93,9 +96,17 @@
 
 .feature_one-click__arrow {
     position: absolute;
+    width: 45px;
     z-index: 1;
     right: 9.25rem;
     bottom: 1.25rem
+}
+
+.feature_one-click__mouse {
+    width: 100%;
+    padding-top: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 .feature_one-click__button {
@@ -128,6 +139,11 @@
     background: var(--white-transparent-60);
     backdrop-filter: blur(2rem);
     z-index: 2;
+}
+
+.feature_real-time-arrow {
+    width: 5.25rem;
+    height: 3rem;
 }
 
 .feature_real-time__currency {
@@ -168,7 +184,7 @@
 
 .feature_real-time__logo.dollar:before {
     content: '$';
-    font-size: 56px;
+    font-size: 14rem;
     font-weight: 500;
     line-height: 1.1;
     letter-spacing: -1.68px;
@@ -177,10 +193,11 @@
 
 .feature_payment__animation {
     padding: 5.25rem;
+    border-radius: 32px;
     background: var(--lightblue-gradient);
 }
 
-.feature_coins_wrap {
+.feature.feature_coins_wrap {
     padding-top: 0;
 }
 
@@ -207,4 +224,80 @@
 
 .feature_coins__messages .behind {
     margin-bottom: -27%;
+}
+
+@media (max-width: 1220px) {
+    .feature {
+        padding: 8rem 11rem;
+    }
+
+    .feature_one-click__arrow {
+        right: 0;
+        bottom: 0;
+    }
+
+    .feature_one-click__animation {
+        padding: 1.25rem 9.25rem 9.25rem;
+    }
+
+    .telegram_chat {
+        padding: 9.75rem 6.75rem;
+    }
+
+    .feature_coins__image {
+        padding-top: 75%;
+    }
+
+    .feature_coins__messages {
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+}
+
+@media (max-width: 980px) {
+    .feature_real-time__static, .feature_real-time__currency {
+        width: 16.5rem;
+    }
+
+    .feature_real-time__currency:not(.active) {
+        margin-right: -11rem;
+    }
+
+    .feature_coins__image {
+        padding-top: 52%;
+    }
+
+    .feature_coins__messages {
+        padding: 8% 22%;
+    }
+
+    .feature_one-click__animation {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+    .feature_one-click__arrow {
+        right: -2.5rem;
+    }
+
+    .feature_real-time-arrows {
+        border-radius: 13px;
+        padding: .75rem 2rem;
+        margin: 0 -3rem 0 -2rem;
+    }
+
+    .feature_real-time-arrow {
+        width: 3.25rem;
+        height: 1.5rem;
+    }
+
+    .feature_real-time__logo.dollar:before {
+        font-size: 9.5rem;
+    }
+}
+
+@media only screen and (max-width: 920px) {
+    .description {
+        display: none;
+    }
 }

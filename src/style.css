@@ -1,11 +1,11 @@
 @import "assets/font/font.css";
 @import "assets/styles/index.css";
+@import "assets/styles/layout.css";
 @import "assets/styles/button.css";
+@import "assets/styles/util_styles.css";
 @import "assets/styles/header.css";
 @import "assets/styles/list.css";
-@import "assets/styles/layout.css";
 @import "assets/styles/typography.css";
-@import "assets/styles/util_styles.css";
 @import 'assets/styles/hero.css';
 @import 'assets/styles/slider.css';
 @import 'assets/styles/feature.css';
@@ -16,7 +16,6 @@
 
 .def {
     --api: url('assets/images/api.png');
-    --mobile-breakpoint: 576px;
     --blue: #41A4DF;
     --blue-deep: #297EE2;
     --white-transparent-24: rgba(255, 255, 255, 0.24);
@@ -37,7 +36,7 @@
     --grey: #F7F9FB;
     --dark-grey: #232328;
     --dark: #0D0D12;
-    --white-shadow: #ffffff;
+    --white-shadow: #F7F9FB;
     --background-light: #F7F9FB;
     --blue-transparent-12: rgba(41, 126, 226, 0.12);
     --blue-transparent-16: rgba(65, 164, 223, 0.16);
@@ -69,4 +68,10 @@
     --feature-create-app_bg: linear-gradient(233deg, #9FCCFA -20.48%, #0974F1 97.38%);
     --quick_start_step: #ffffff;
     --message-preview-color: #ffffff;
+}
+
+@media (max-width: 576px) {
+    .header_menu {
+        display: none;
+    }
 }
