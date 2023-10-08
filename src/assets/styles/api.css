@@ -4,6 +4,7 @@
 }
 
 .api_wrapper {
+    background-image: var(--api);
     background-repeat: no-repeat;
     background-size: cover;
     display: flex;

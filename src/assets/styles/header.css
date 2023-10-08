@@ -56,12 +56,14 @@
 }
 
 .header_buttons .theme_toggle {
+    background-image: var(--theme);
+    background-color: transparent;
+    background-position: center;
+    background-repeat: no-repeat;
     cursor: pointer;
-    background: transparent;
     border: none;
     padding: 2rem;
     box-sizing: content-box;
     width: 8rem;
     height: 8rem;
 }
-

@@ -200,6 +200,7 @@
 }
 
 .feature_coins__messages {
+    background-image: var(--small_phone);
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
