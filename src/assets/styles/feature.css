@@ -103,14 +103,11 @@
     border: none;
     border-radius: 17px;
     color: var(--dark);
+    background: var(--feature-create-app_bg);
     font-size: 5.5rem;
     font-weight: 500;
     line-height: 1.2;
     max-height: 15.5rem;
-}
-
-.feature_one-click__button img {
-    width: 5.25rem;
 }
 
 .feature_one-click__button:active, .feature_one-click__button:focus {
@@ -148,7 +145,7 @@
 .feature_real-time__static {
     position: relative;
     width: 24rem;
-    border: 1rem solid var(--white);
+    border: 1rem solid var(--white-shadow);
     border-radius: 50%;
     box-shadow: 0 0 16px 0 rgba(182, 186, 191, 0.04), 0 4px 6px 0 rgba(0, 0, 0, 0.02);
 }

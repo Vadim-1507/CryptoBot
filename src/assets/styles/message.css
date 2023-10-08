@@ -36,6 +36,7 @@
     line-height: 1.1;
     gap: 3.25rem;
     border-radius: 24px;
+    color: var(--message-preview-color);
     background: var(--three-lightblue-gradient);
     box-shadow: 0 -2px 20px 0 rgba(0, 0, 0, 0.02);
 }
@@ -156,6 +157,10 @@
     line-height: 1.37;
     right: 4.25rem;
     bottom: 2.5rem;
+}
+
+.message.preview .message_time {
+    color: #7B8992;
 }
 
 .message_time.top {

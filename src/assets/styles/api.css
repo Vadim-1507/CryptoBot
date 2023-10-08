@@ -15,4 +15,8 @@
 
 .api_content {
     width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8rem;
 }

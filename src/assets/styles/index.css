@@ -6,9 +6,5 @@ body {
     font-family: Inter, serif;
     padding: 0;
     margin: 0;
-    --mobile-breakpoint: 576px;
-}
-
-body.white_theme {
     background: var(--dark-grey);
 }

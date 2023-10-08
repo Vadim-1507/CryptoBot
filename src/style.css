@@ -14,30 +14,59 @@
 @import 'assets/styles/community.css';
 @import 'assets/styles/message.css';
 
-.white_theme {
-    --theme: url("assets/images/sun.svg");
-    --phone: url("assets/images/phone.png");
-    --small_phone: url('assets/images/phone_small.png');
+.def {
     --api: url('assets/images/api.png');
-    --white: #ffffff;
-    --grey: #F7F9FB;
-    --dark-grey: #232328;
-    --dark: #0D0D12;
+    --mobile-breakpoint: 576px;
     --blue: #41A4DF;
     --blue-deep: #297EE2;
-    --background-light: #F7F9FB;
-    --blue-transparent-12: rgba(41, 126, 226, 0.12);
-    --blue-transparent-16: rgba(65, 164, 223, 0.16);
     --white-transparent-24: rgba(255, 255, 255, 0.24);
     --white-transparent-60: rgba(255, 255, 255, 0.6);
-    --dark-transparent-40: rgba(17, 17, 17, 0.40);
-    --dark-transparent-80: rgba(17, 17, 17, 0.80);
     --black_transparent_30: rgba(0, 0, 0, .3);
     --pink-gradient: linear-gradient(340deg, #FAACA8 8.42%, #DDD6F3 91.45%);
     --yellow-gradient: linear-gradient(207deg, #FCB69F 6.91%, #FFECD2 92.45%);
     --blue-gradient: linear-gradient(0deg, #C2E9FB -16.6%, #A1C4FD 106.15%);
     --purple-gradient: linear-gradient(297deg, #8EC5FC 8.25%, #E0C3FC 91.76%);
     --lightblue-gradient: linear-gradient(233deg, #9FCCFA -20.48%, #0974F1 97.38%);
+}
+
+.white_theme {
+    --theme: url("assets/images/sun.svg");
+    --phone: url("assets/images/phone.png");
+    --small_phone: url('assets/images/phone_small.png');
+    --white: #ffffff;
+    --grey: #F7F9FB;
+    --dark-grey: #232328;
+    --dark: #0D0D12;
+    --white-shadow: #ffffff;
+    --background-light: #F7F9FB;
+    --blue-transparent-12: rgba(41, 126, 226, 0.12);
+    --blue-transparent-16: rgba(65, 164, 223, 0.16);
+    --dark-transparent-40: rgba(17, 17, 17, 0.40);
+    --dark-transparent-80: rgba(17, 17, 17, 0.80);
     --three-lightblue-gradient: linear-gradient(98deg, #E8F2F9 15.04%, #E8F2F9 52.22%, #E9F1FA 90.93%);
     --dark-gradient: linear-gradient(220deg, #010417 10.26%, #2B333F 84.25%), linear-gradient(46deg, #000 15.89%, #434343 171.16%);
+    --feature-create-app_bg: linear-gradient(240deg, rgba(41, 126, 226, 0.12) 3.57%, rgba(24, 97, 182, 0.12) 86.24%);
+    --quick_start_step: linear-gradient(220deg, #010417 10.26%, #2B333F 84.25%), linear-gradient(46deg, #000 15.89%, #434343 171.16%);
+    --message-preview-color: #1B1C22;
+}
+
+.dark_theme {
+    --theme: url("assets/images/moon.svg");
+    --phone: url("assets/images/dark_phone.png");
+    --small_phone: url('assets/images/dark_small_phone.png');
+    --white: #0D0D12;
+    --grey: #18181D;
+    --dark-grey: #18181D;
+    --dark: #ffffff;
+    --white-shadow: #18181D;
+    --background-light: #18181D;
+    --blue-transparent-12: transparent;
+    --blue-transparent-16: transparent;
+    --dark-transparent-40: rgba(255, 255, 255, 0.4);
+    --dark-transparent-80: rgba(255, 255, 255, 0.80);
+    --three-lightblue-gradient: #222222;
+    --dark-gradient: linear-gradient(78deg, #181818 -16.92%, #2F2F2F 84.29%);
+    --feature-create-app_bg: linear-gradient(233deg, #9FCCFA -20.48%, #0974F1 97.38%);
+    --quick_start_step: #ffffff;
+    --message-preview-color: #ffffff;
 }

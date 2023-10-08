@@ -27,7 +27,7 @@
     line-height: 1.1;
     letter-spacing: -1.26px;
     color: var(--white);
-    background: var(--dark-gradient);
+    background: var(--quick_start_step);
     box-shadow: 0 0 8px 0 rgba(182, 186, 191, 0.04), 0 2px 3px 0 rgba(0, 0, 0, 0.02);
 }
 
