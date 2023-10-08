@@ -1,7 +1,8 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
-const worker_threads = require('worker_threads');
+
+const isDev = process.env.NODE_ENV === 'development';
 
 module.exports = {
     entry: {
@@ -10,6 +11,9 @@ module.exports = {
     output: {
         path: path.resolve(__dirname, './dist'),
         filename: 'index.js',
+    },
+    devServer: {
+        port: 3500,
     },
     module: {
         rules: [
@@ -30,7 +34,7 @@ module.exports = {
             {
                 test: /\.css$/,
                 use: [
-                    MiniCssExtractPlugin.loader,
+                    isDev ? 'style-loader' : MiniCssExtractPlugin.loader,
                     'css-loader',
                 ],
             },

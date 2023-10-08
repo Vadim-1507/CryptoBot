@@ -5,6 +5,7 @@
     line-height: 1.2;
     border-radius: 900px;
     border: none;
+    text-decoration: none;
     cursor: pointer;
     transition: .2s;
 }
