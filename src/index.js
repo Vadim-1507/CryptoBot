@@ -31,3 +31,25 @@ import './assets/images/python.svg';
 import './assets/images/go.svg';
 import './assets/images/mouse.png';
 import './assets/images/pointer.svg';
+
+const darkThemeClass = 'dark_theme';
+const whiteThemeClass = 'white_theme';
+
+const $body = document.querySelector('body');
+const $theme_toggle = document.getElementById('theme_toggle');
+
+function onToggleTheme() {
+    if ($body) {
+        if ($body.classList.contains(darkThemeClass)) {
+            $body.classList.remove(darkThemeClass);
+            $body.classList.add(whiteThemeClass);
+        } else {
+            $body.classList.remove(whiteThemeClass);
+            $body.classList.add(darkThemeClass);
+        }
+    }
+}
+
+if ($theme_toggle) {
+    $theme_toggle.addEventListener('click', onToggleTheme);
+}
