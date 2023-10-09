@@ -213,6 +213,10 @@
         height: 7.75rem;
     }
 
+    .message.button {
+        padding: 2rem 0;
+    }
+
     .message.big {
         padding-bottom: 5rem;
     }

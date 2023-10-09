@@ -161,7 +161,13 @@
     }
 
     .hero_phone__image {
-        padding-top: 135%;
+        padding-top: 95%;
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    .hero_phone__image {
+        padding-top: 120%;
     }
 }
 

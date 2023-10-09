@@ -31,3 +31,56 @@
         width: 60%;
     }
 }
+
+@media only screen and (max-width: 768px) {
+    .api {
+        width: 60%;
+        margin: 0 auto;
+    }
+
+    .api_wrapper {
+        background-image: var(--small_api);
+        background-position: top;
+        display: flex;
+        justify-content: center;
+        padding: 90% 8rem 7rem;
+    }
+
+    .api_content {
+        width: 80%;
+        gap: 6rem;
+    }
+
+    .api .button {
+        width: 100%;
+        box-sizing: border-box;
+    }
+}
+
+@media only screen and (max-width: 670px) {
+    .api {
+        width: 75%;
+    }
+
+    .api_wrapper {
+        padding-top: 80%;
+    }
+
+    .api_content {
+        width: 87%;
+    }
+}
+
+@media only screen and (max-width: 540px) {
+    .api {
+        width: 100%;
+    }
+
+    .api_wrapper {
+        padding-top: 90%;
+    }
+
+    .api_content {
+        width: 100%;
+    }
+}

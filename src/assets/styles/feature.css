@@ -26,8 +26,14 @@
     background: var(--background-light);
 }
 
-.feature_currency__title {
-    margin-bottom: 10.5rem;
+.feature_currency_wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 10.5rem;
+}
+
+.feature .title {
+    margin-bottom: 5rem;
 }
 
 .feature_currencies {
@@ -255,6 +261,10 @@
 }
 
 @media (max-width: 980px) {
+    .feature {
+        border-radius: 24px;
+    }
+
     .feature_real-time__static, .feature_real-time__currency {
         width: 16.5rem;
     }
@@ -296,8 +306,194 @@
     }
 }
 
-@media only screen and (max-width: 920px) {
+@media (max-width: 920px) {
+    .feature {
+        padding: 8rem;
+    }
+
     .description {
         display: none;
+    }
+
+    .feature_payment__animation {
+        border-radius: 16px;
+    }
+}
+
+@media (max-width: 870px) {
+    .features {
+        gap: 4rem;
+    }
+
+    .feature_currency_wrapper {
+        flex-direction: column-reverse;
+        gap: 6rem;
+    }
+
+    .feature .title {
+        margin-bottom: 4rem;
+    }
+
+    .features_horizontal {
+        flex-direction: column;
+        gap: 4rem;
+    }
+
+    .feature_one-click__animation {
+        padding: 5.5rem 6.75rem;
+    }
+
+    .feature_one-click__arrow {
+        right: 25%;
+    }
+
+    .telegram_chat {
+        width: 45%;
+        margin: 0 auto 6rem;
+    }
+
+    .feature_payment__animation {
+        width: 40%;
+        margin: 0 auto;
+    }
+
+    .feature_coins__messages {
+        padding: 5% 34%;
+    }
+
+    .feature_coins__image {
+        padding-top: 32%;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .feature_currencies {
+        width: 50%;
+        margin: 0 auto;
+    }
+
+    .telegram_chat {
+        width: 55%;
+    }
+
+    .feature_payment__animation {
+        width: 50%;
+    }
+
+    .feature_one-click__arrow {
+        right: 20%;
+    }
+}
+
+@media only screen and (max-width: 650px) {
+    .feature_currencies {
+        width: 60%;
+    }
+
+    .telegram_chat {
+        width: 70%;
+    }
+
+    .feature_payment__animation {
+        width: 50%;
+    }
+
+    .feature_one-click__arrow {
+        right: 10%;
+    }
+
+    .feature_co50ins__image {
+        padding-top: 36%;
+    }
+
+    .feature_coins__messages {
+        padding: 4% 31%;
+    }
+}
+
+@media only screen and (max-width: 555px) {
+    .feature_currencies {
+        width: 75%;
+    }
+
+    .feature_payment__animation {
+        width: 65%;
+    }
+
+    .feature_coins__image {
+        padding-top: 42%;
+    }
+
+    .feature_coins__messages {
+        padding: 4% 28%;
+    }
+}
+
+@media only screen and (max-width: 490px) {
+    .feature_currencies {
+        width: 87%;
+    }
+
+    .feature_one-click__arrow {
+        right: 0;
+    }
+
+    .telegram_chat {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .feature_coins__image {
+        padding-top: 50%;
+    }
+
+    .feature_coins__messages {
+        padding: 4% 24%;
+    }
+
+    .feature_payment__animation {
+        width: 75%;
+    }
+}
+
+@media only screen and (max-width: 420px) {
+    .feature_currencies {
+        width: 100%;
+    }
+
+    .feature_currency {
+        max-width: 17rem;
+    }
+
+    .feature_one-click__animation {
+        padding: 5.5rem 0;
+    }
+
+    .feature_one-click__arrow {
+        right: -10%;
+        bottom: -20%;
+    }
+
+    .feature_coins__image {
+        padding-top: 60%;
+    }
+
+    .feature_coins__messages {
+        padding: 4% 20%;
+    }
+
+    .feature_payment__animation {
+        box-sizing: border-box;
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 360px) {
+    .feature_coins__image {
+        padding-top: 74%;
+    }
+
+    .feature_coins__messages {
+        padding: 6% 12%;
     }
 }

@@ -16,6 +16,7 @@
 
 .def {
     --api: url('assets/images/api.png');
+    --small_api: url('assets/images/small_api.png');
     --blue: #41A4DF;
     --blue-deep: #297EE2;
     --white-transparent-24: rgba(255, 255, 255, 0.24);

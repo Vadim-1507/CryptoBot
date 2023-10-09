@@ -1,4 +1,4 @@
-.community, .community_stack, .community_stack__item {
+.community, .community_stack__item {
     display: flex;
 }
 
@@ -16,8 +16,16 @@
     text-align: center;
 }
 
+.community_title {
+    display: flex;
+    flex-direction: column;
+    gap: 6rem;
+}
+
 .community_stack {
+    display: grid;
     width: 83%;
+    grid-template-columns: repeat(auto-fit, minmax(26rem, 1fr));
     gap: 6rem;
 }
 
@@ -65,3 +73,8 @@
     background: linear-gradient(145deg, #00ACD7 7%, #00A8D3 91.03%);
 }
 
+@media (max-width: 860px) {
+    .community_stack {
+        gap: 3rem;
+    }
+}
