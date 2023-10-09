@@ -32,24 +32,17 @@ import './assets/images/go.svg';
 import './assets/images/mouse.png';
 import './assets/images/pointer.svg';
 
-const darkThemeClass = 'dark_theme';
-const whiteThemeClass = 'white_theme';
+import setThemeToggle from './assets/scripts/theme_toggle';
+import setTgDataChangerListener from './assets/scripts/tg_data_changer';
 
-const $body = document.querySelector('body');
 const $theme_toggle = document.getElementById('theme_toggle');
 
-function onToggleTheme() {
-    if ($body) {
-        if ($body.classList.contains(darkThemeClass)) {
-            $body.classList.remove(darkThemeClass);
-            $body.classList.add(whiteThemeClass);
-        } else {
-            $body.classList.remove(whiteThemeClass);
-            $body.classList.add(darkThemeClass);
-        }
-    }
+if ($theme_toggle) {
+    setThemeToggle($theme_toggle);
 }
 
-if ($theme_toggle) {
-    $theme_toggle.addEventListener('click', onToggleTheme);
+const $tg_chat = document.getElementById('telegram_chat');
+
+if ($tg_chat) {
+    setTgDataChangerListener($tg_chat);
 }

@@ -407,28 +407,28 @@
                         </div>
                     </div>
                     <div class="feature flex_width_60">
-                        <div class="telegram_chat" style="background-image: url('assets/images/tg_background.jpg')">
+                        <div id="telegram_chat" class="telegram_chat" style="background-image: url('assets/images/tg_background.jpg')">
                             <div class="message first">
-                                Application Statistics <span class="semi_bold_text">@GoodsBot</span> for <span class="semi_bold_text">all time:</span><br/>
+                                Application Statistics <span class="semi_bold_text">@GoodsBot</span> for <span class="semi_bold_text" data-telegram="tg_name">all time:</span><br/>
                                 <br/>
-                                Volume: <span class="semi_bold_text">$6,530</span><br/>
+                                Volume: <span class="semi_bold_text" data-telegram="tg_volume">$6,530</span><br/>
                                 <br/>
-                                The number of created invoices: <span class="semi_bold_text">15,569</span><br/>
-                                Number of payments: <span class="semi_bold_text">6,453</span><br/>
-                                Number of users: <span class="semi_bold_text">5,606</span><br/>
+                                The number of created invoices: <span class="semi_bold_text" data-telegram="tg_invoices">15,569</span><br/>
+                                Number of payments: <span class="semi_bold_text" data-telegram="tg_payments">6,453</span><br/>
+                                Number of users: <span class="semi_bold_text" data-telegram="tg_users">5,606</span><br/>
                                 <br/>
-                                Conversion: <span class="semi_bold_text">41%</span>
-                                <div class="message_time">21:30</div>
+                                Conversion: <span class="semi_bold_text" data-telegram="tg_conversion">41%</span>
+                                <div class="message_time" data-telegram="tg_name">21:30</div>
                             </div>
                             <div class="feature_small_messages">
-                                <div class="message button center active"><span class="allocate flex_center">All Time</span></div>
-                                <div class="message button center"><span class="allocate flex_center">Today</span></div>
+                                <div class="message button center active" data-period="all_time"><span class="allocate flex_center">All Time</span></div>
+                                <div class="message button center" data-period="today"><span class="allocate flex_center">Today</span></div>
                             </div>
                             <div class="feature_small_messages">
-                                <div class="message button center"><span class="allocate flex_center">Yesterday</span></div>
-                                <div class="message button center"><span class="allocate flex_center">Week</span></div>
+                                <div class="message button center" data-period="yesterday"><span class="allocate flex_center">Yesterday</span></div>
+                                <div class="message button center" data-period="week"><span class="allocate flex_center">Week</span></div>
                             </div>
-                            <div class="message button center"><span class="allocate flex_center">Month</span></div>
+                            <div class="message button center" data-period="month"><span class="allocate flex_center">Month</span></div>
                             <div class="message button last">
                             <span class="back_arrow flex_center">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="7" height="11" viewBox="0 0 7 11" fill="none">
