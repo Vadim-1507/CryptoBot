@@ -161,6 +161,8 @@
 
 .feature_real-time__currency {
     width: 26rem;
+    --transform: translateX(-69%);
+    --shift: translateX(9rem);
 }
 
 .feature_real-time__currency:not(.active) {
@@ -276,6 +278,8 @@
 
     .feature_real-time__static, .feature_real-time__currency {
         width: 16.5rem;
+        --transform: translateX(-67%);
+        --shift: translateX(5.5rem);
     }
 
     .feature_real-time__currency:not(.active) {

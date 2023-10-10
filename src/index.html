@@ -344,9 +344,9 @@
                         </div>
                         <div class="feature">
                             <div class="feature_real-time">
-                                <div class="feature_real-time__animation flex_center">
-                                    <div class="feature_real-time__crypto flex_center">
-                                        <div class="feature_real-time__currency">
+                                <div id="currencies_block" class="feature_real-time__animation flex_center">
+                                    <div id="currencies_wrap" class="feature_real-time__crypto flex_center">
+                                        <div id="usdt_currency" data-next="ton_currency" class="feature_real-time__currency">
                                             <div class="feature_real-time__static">
                                                 <div class="feature_real-time__wrap">
                                                     <div class="feature_real-time__logo full_size flex_center usdt">
@@ -358,7 +358,7 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="feature_real-time__currency">
+                                        <div id="btc_currency" data-next="usdt_currency" class="feature_real-time__currency">
                                             <div class="feature_real-time__static">
                                                 <div class="feature_real-time__wrap">
                                                     <div class="feature_real-time__logo full_size flex_center btc">
@@ -369,7 +369,7 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="feature_real-time__currency active">
+                                        <div id="ton_currency" data-next="btc_currency" class="feature_real-time__currency active">
                                             <div class="feature_real-time__static">
                                                 <div class="feature_real-time__wrap">
                                                     <div class="feature_real-time__logo full_size flex_center ton">

@@ -34,7 +34,7 @@ import './assets/images/pointer.svg';
 
 import setThemeToggle from './assets/scripts/theme_toggle';
 import setTgDataChangerListener from './assets/scripts/tg_data_changer';
-import { setCreateAnimation } from './assets/scripts/feature';
+import { setCreateAnimation, onChangeCurrency } from './assets/scripts/feature';
 
 const $theme_toggle = document.getElementById('theme_toggle');
 
@@ -42,14 +42,18 @@ if ($theme_toggle) {
     setThemeToggle($theme_toggle);
 }
 
+// feature block animation
 const $tg_chat = document.getElementById('telegram_chat');
-
 if ($tg_chat) {
     setTgDataChangerListener($tg_chat);
 }
 
 const $createAppBlock = document.getElementById('create_app');
-
 if ($createAppBlock) {
     setCreateAnimation($createAppBlock);
+}
+
+const $currenciesBlock = document.getElementById('currencies_block');
+if ($currenciesBlock) {
+    onChangeCurrency($currenciesBlock);
 }

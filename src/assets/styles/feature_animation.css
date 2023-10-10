@@ -39,3 +39,51 @@
         transform: scale(1.09);
     }
 }
+.shift_currency, .next_currency, .last_currency {
+    animation-duration: .7s;
+}
+
+.shift_currency {
+    z-index: 1;
+    animation-name: shift_currency;
+}
+
+.next_currency {
+    animation-name: next_currency;
+}
+
+.last_currency {
+    z-index: 0;
+    animation-name: last_currency;
+}
+
+.last_currency svg {
+   opacity: 0;
+}
+
+@keyframes shift_currency {
+    from {
+        transform: none;
+    }
+    to {
+        transform: var(--shift);
+    }
+}
+
+@keyframes next_currency {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes last_currency {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: var(--transform);
+    }
+}
