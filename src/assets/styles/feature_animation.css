@@ -17,16 +17,16 @@
 
 @keyframes arrow_btn {
     0% {
-        right: 9.25rem;
-        bottom: 1.25rem;
+        right: var(--start_r);
+        bottom: var(--start_b);
     }
     70% {
-        right: 13rem;
-        bottom: 10rem;
+        right: var(--finish_r);
+        bottom: var(--finish_b);
     }
     100% {
-        right: 13rem;
-        bottom: 10rem;
+        right: var(--finish_r);
+        bottom: var(--finish_b);
     }
 }
 

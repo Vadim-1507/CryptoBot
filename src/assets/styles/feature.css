@@ -105,9 +105,14 @@
 .feature_one-click__arrow {
     position: absolute;
     width: 45px;
+    --start_r: 9.25rem;
+    --start_b: 1.25rem;
+    --finish_r: 13rem;
+    --finish_b: 10rem;
     z-index: 1;
-    right: 9.25rem;
-    bottom: 1.25rem
+    right: var(--start_r);
+    bottom: var(--start_b);
+
 }
 
 .feature_one-click__mouse {
@@ -240,8 +245,10 @@
     }
 
     .feature_one-click__arrow {
-        right: 0;
-        bottom: 0;
+        --start_r: 0;
+        --start_b: 0;
+        --finish_r: 4rem;
+        --finish_b: 3rem;
     }
 
     .feature_one-click__animation {
@@ -289,7 +296,9 @@
     }
 
     .feature_one-click__arrow {
-        right: -2.5rem;
+        --start_r: -7rem;
+        --finish_r: -2rem;
+        --finish_b: 2rem;
     }
 
     .feature_real-time-arrows {
@@ -346,7 +355,10 @@
     }
 
     .feature_one-click__arrow {
-        right: 25%;
+        --start_r: 25%;
+        --start_b: -15%;
+        --finish_r: 29%;
+        --finish_b: -3%;
     }
 
     .telegram_chat {
@@ -383,7 +395,7 @@
     }
 
     .feature_one-click__arrow {
-        right: 20%;
+        --start_r: 20%;
     }
 }
 
@@ -401,7 +413,8 @@
     }
 
     .feature_one-click__arrow {
-        right: 10%;
+        --start_r: 10%;
+        --finish_r: 25%;
     }
 
     .feature_co50ins__image {
@@ -437,7 +450,8 @@
     }
 
     .feature_one-click__arrow {
-        right: 0;
+        --start_r: 0;
+        --finish_r: 15%;
     }
 
     .telegram_chat {
@@ -472,8 +486,10 @@
     }
 
     .feature_one-click__arrow {
-        right: -10%;
-        bottom: -20%;
+        --start_r: -10%;
+        --start_b: -20%;
+        --finish_r: 5%;
+        --finish_b: 0;
     }
 
     .feature_coins__image {

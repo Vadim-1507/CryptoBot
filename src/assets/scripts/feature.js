@@ -2,7 +2,7 @@ export function setCreateAnimation(element) {
     const $btn = document.getElementById('create_app_btn');
     const $arrow = document.getElementById('create_app_arrow');
 
-    element.addEventListener('mouseenter', () => {
+    function setAnimation() {
         $btn.classList.add('feature_button_click');
         $arrow.classList.add('arrow_to_btn');
 
@@ -10,5 +10,8 @@ export function setCreateAnimation(element) {
             $btn.classList.remove('feature_button_click');
             $arrow.classList.remove('arrow_to_btn');
         }, 1750);
-    });
+    }
+
+    element.addEventListener('mouseenter', setAnimation);
+    element.addEventListener('touchstart', setAnimation);
 }
