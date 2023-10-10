@@ -1,0 +1,41 @@
+.arrow_to_btn {
+    animation-name: arrow_btn;
+    animation-duration: .8s;
+}
+
+.feature_button_click {
+    animation-name: button_click;
+    animation-duration: .2s;
+    animation-delay: .6s;
+}
+
+.feature_button_click, .arrow_to_btn {
+    animation-fill-mode: forwards;
+    animation-direction: alternate;
+    animation-iteration-count: 2;
+}
+
+@keyframes arrow_btn {
+    0% {
+        right: 9.25rem;
+        bottom: 1.25rem;
+    }
+    70% {
+        right: 13rem;
+        bottom: 10rem;
+    }
+    100% {
+        right: 13rem;
+        bottom: 10rem;
+    }
+}
+
+@keyframes button_click {
+    from {
+        transform: none;
+    }
+    to {
+        background: var(--feature-create-app_bg-hover);
+        transform: scale(1.09);
+    }
+}
