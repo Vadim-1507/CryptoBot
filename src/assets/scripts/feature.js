@@ -52,3 +52,48 @@ export function onChangeCurrency(element) {
         }, 690);
     });
 }
+
+export function onChangeMessage(element) {
+    const $messages = element.querySelectorAll('[data-next]');
+    let started = false;
+    element.addEventListener('click', () => {
+        if (started) return;
+        started = true;
+        let active;
+        let behind;
+        let next;
+        $messages.forEach((message) => {
+            if(message.classList.contains('behind_message')) {
+                behind = message;
+                return false;
+            }
+            if(!message.classList.contains('hide')
+                && !message.classList.contains('behind_message')
+                && !message.classList.contains('hide_message')) {
+                active = message;
+            }
+            return false;
+        });
+        next = active.nextElementSibling;
+        if (behind) {
+            behind.classList.add('hide_message');
+            behind.classList.remove('behind_message');
+        }
+        active.classList.add('behind_message');
+        active.classList.remove('active_message');
+        next.classList.add('active_message');
+        next.classList.remove('hide');
+        next.classList.remove('behind_message');
+        next.classList.remove('hide_message');
+        setTimeout(() => {
+            if (behind) {
+                const parent = behind.parentElement;
+                behind.remove();
+                behind.classList.add('hide');
+                behind.classList.remove('hide_message');
+                parent.append(behind);
+            }
+            started = false;
+        }, 690);
+    });
+}

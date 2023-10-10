@@ -1,5 +1,3 @@
-@import 'feature_animation.css';
-
 .features {
     padding: 6rem 0;
 }
@@ -207,9 +205,15 @@
 }
 
 .feature_payment__animation {
-    padding: 5.25rem;
+    padding: 10.5rem 5.25rem;
     border-radius: 32px;
     background: var(--lightblue-gradient);
+}
+
+.feature_payment__wrapper {
+    position: relative;
+    width: 100%;
+    height: 100%;
 }
 
 .feature.feature_coins_wrap {
@@ -235,6 +239,12 @@
     background-position: center;
     padding: 6% 15% 0;
     align-items: center;
+}
+
+.feature_coins__wrapper {
+    position: relative;
+    width: 100%;
+    height: max-content;
 }
 
 .feature_coins__messages .behind {
@@ -444,7 +454,7 @@
     }
 
     .feature_coins__messages {
-        padding: 4% 28%;
+        padding: 7% 28%;
     }
 }
 
@@ -468,7 +478,7 @@
     }
 
     .feature_coins__messages {
-        padding: 4% 24%;
+        padding: 7% 24%;
     }
 
     .feature_payment__animation {
@@ -501,7 +511,7 @@
     }
 
     .feature_coins__messages {
-        padding: 4% 20%;
+        padding: 7% 20%;
     }
 
     .feature_payment__animation {
@@ -516,6 +526,6 @@
     }
 
     .feature_coins__messages {
-        padding: 6% 12%;
+        padding: 9% 12%;
     }
 }

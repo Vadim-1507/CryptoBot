@@ -34,7 +34,7 @@ import './assets/images/pointer.svg';
 
 import setThemeToggle from './assets/scripts/theme_toggle';
 import setTgDataChangerListener from './assets/scripts/tg_data_changer';
-import { setCreateAnimation, onChangeCurrency } from './assets/scripts/feature';
+import { setCreateAnimation, onChangeCurrency, onChangeMessage } from './assets/scripts/feature';
 
 const $theme_toggle = document.getElementById('theme_toggle');
 
@@ -56,4 +56,14 @@ if ($createAppBlock) {
 const $currenciesBlock = document.getElementById('currencies_block');
 if ($currenciesBlock) {
     onChangeCurrency($currenciesBlock);
+}
+
+const $payments = document.getElementById('payment');
+if ($payments) {
+    onChangeMessage($payments);
+}
+
+const $coins = document.getElementById('coins');
+if($coins) {
+    onChangeMessage($coins);
 }
