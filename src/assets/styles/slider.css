@@ -28,14 +28,17 @@
 
 .slide_in_view {
     width: 100%;
+    overflow: hidden;
 }
 
 .slider_list {
-    overflow: hidden;
+    display: flex;
+    flex-direction: column;
     flex: 1;
 }
 
 .slide {
+    flex: 1;
     gap: 11%;
 }
 
@@ -72,6 +75,7 @@
     width: 1rem;
     flex: 1;
     background: var(--white-transparent-24);
+    transition: .4s;
 }
 
 .slide_dot.active {
@@ -114,11 +118,7 @@
     }
 
     .slide {
-        padding: 0 0 8rem;
-    }
-
-    .slide:last-child {
-        padding: 0;
+        padding: 0 0.25rem 8rem;
     }
 
     .slide_visual__wrapper {

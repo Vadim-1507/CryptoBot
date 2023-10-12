@@ -35,6 +35,7 @@ import './assets/images/pointer.svg';
 import setThemeToggle from './assets/scripts/theme_toggle';
 import setTgDataChangerListener from './assets/scripts/tg_data_changer';
 import { setCreateAnimation, onChangeCurrency, onChangeMessage } from './assets/scripts/feature';
+import Slider from './assets/scripts/slider';
 
 const $theme_toggle = document.getElementById('theme_toggle');
 
@@ -67,3 +68,5 @@ const $coins = document.getElementById('coins');
 if($coins) {
     onChangeMessage($coins);
 }
+
+Slider({ direction_change_size: 980 });
