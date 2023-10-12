@@ -170,7 +170,7 @@ function Slider(props) {
             setActiveIndex();
             activateDot();
             setFluency();
-        }, 290);
+        }, 300);
     }
 
     function activateDot() {
